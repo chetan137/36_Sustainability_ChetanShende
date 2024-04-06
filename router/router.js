@@ -9,7 +9,7 @@ const Dataset = require('../models/Dataset');
 const upload = multer({ dest: 'uploads/' });
 
 
-router.post('/upload', upload.single('file'), (req, res) => {
+router.post('/upload ', upload.single('file'), (req, res) => {
 
   const results = [];
   fs.createReadStream(req.file.path)
