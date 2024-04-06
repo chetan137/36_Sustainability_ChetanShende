@@ -60,7 +60,7 @@ accuracy = accuracy_score(y_stability_test, y_stability_pred)
 print("Accuracy:", accuracy)
 
 # Step 5: Generate Insights
-# Analyze stability trends
+# Analyze stability trendsgit
 grid_data['Predicted_Stability'] = y_stability_pred
 sns.countplot(x='Predicted_Stability', data=grid_data)
 plt.title('Predicted Grid Stability')
